@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cems-school": {
+    "svp-higher-secondary-school": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CEMS",
+            "outputPath": "dist/svp-higher-secondary-school",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -99,10 +99,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cems-school:build:production"
+              "buildTarget": "svp-higher-secondary-school:build:production"
             },
             "development": {
-              "buildTarget": "cems-school:build:development"
+              "buildTarget": "svp-higher-secondary-school:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -110,7 +110,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "cems-school:build"
+            "buildTarget": "svp-higher-secondary-school:build"
           }
         },
         "test": {

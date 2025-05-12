@@ -2,8 +2,6 @@ import { Routes } from '@angular/router';
 import { ActivityComponent } from './activity/activity.component';
 import { ContactComponent } from './contact/contact.component';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
-import { StructureComponent } from './structure/structure.component';
-import { SessionComponent } from './session/session.component';
 import { AboutComponent } from './about/about.component';
 
 export const BasicRoutes: Routes = [{
@@ -20,14 +18,6 @@ export const BasicRoutes: Routes = [{
     {
         path: 'contact',
         component: ContactComponent
-    },
-    {
-        path: 'structure',
-        component: StructureComponent
-    },
-    {
-        path: 'session',
-        component: SessionComponent
     },
     {
         path: 'about',

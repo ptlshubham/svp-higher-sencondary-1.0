@@ -13,14 +13,9 @@
                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                         <button ngbDropdownItem disabled>Select Department</button>
                         <button ngbDropdownItem (click)="slectAll('ALL')">ALL</button>
-                        <button ngbDropdownItem (click)="selectDepartment('Administrator')">Administrator</button>
-                        <button ngbDropdownItem (click)="selectDepartment('KG')">KG</button>
-                        <button ngbDropdownItem (click)="selectDepartment('Pre-Primary')">Pre-Primary</button>
-                        <button ngbDropdownItem (click)="selectDepartment('Upper-Primary')">Upper-Primary</button>
-                        <button ngbDropdownItem (click)="selectDepartment('Secondary')">Secondary</button>
-                        <button ngbDropdownItem (click)="selectDepartment('Higher-Secondary')">Higher-Secondary</button>
-                        <button ngbDropdownItem (click)="selectDepartment('Udaan')">Udaan</button>
-                        <button ngbDropdownItem (click)="selectDepartment('Non-Teaching')">Non-Teaching</button>
+                        <div *ngFor="let y of departmentData">
+                            <button ngbDropdownItem on-click="selectDepartment(y.department)">{{y.department}}</button>
+                        </div>
                     </div>
                 </div>
             </div>

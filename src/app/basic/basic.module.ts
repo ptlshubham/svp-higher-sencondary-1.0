@@ -7,9 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { ActivityComponent } from './activity/activity.component';
 import { ContactComponent } from './contact/contact.component';
-import { StructureComponent } from './structure/structure.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SessionComponent } from './session/session.component';
 import { AboutComponent } from './about/about.component';
 
 
@@ -19,8 +17,6 @@ import { AboutComponent } from './about/about.component';
     InfrastructureComponent,
     ActivityComponent,
     ContactComponent,
-    StructureComponent,
-    SessionComponent,
     AboutComponent,
   ],
   imports: [
